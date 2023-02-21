@@ -11,7 +11,7 @@
 body {
     background-color: #19142A;
     width: 100%;
-    font-family: 'Fira Code', monospace;
+    font-family: 'Fira Code', monospace, Verdana;
     color: #fff;
 }
 
@@ -60,4 +60,9 @@ img {
 }
 
 
-
+@media only screen and (max-width: 479px){
+    .container {
+        width: 90%;
+        height: 90vh;
+    }
+}

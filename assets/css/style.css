@@ -23,7 +23,7 @@ section h1,
 section h4,
 section h3,
 form button {
-    font-family: 'Fira Code', monospace;
+    font-family: 'Fira Code', monospace, Verdana;
     font-weight: 900;
 }
 
@@ -113,15 +113,14 @@ section .container-fluid {
 .content {
     width: 657px;
     display: block;
-    font-family: 'Fira Code';
-    word-spacing: -4px;
+    font-family: 'Fira Code', monospace, Verdana;
     text-align: justify;
     letter-spacing: -1px;
 }
 
 .content h2 {
     font-size: min(6vw, 24px );
-    font-family: 'Fira Code', monospace;
+    font-family: 'Fira Code', monospace, Verdana;
 }
 
 .personal-img {
@@ -303,7 +302,7 @@ ul.social-links li {
 
 .card-text h5 {
     padding: 10px;
-    font-family: 'Fira Code', monospace;
+    font-family: 'Fira Code', monospace, Verdana;
     color: #f9b17a;
     letter-spacing: -1px;
 }
@@ -390,7 +389,9 @@ footer {
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-
+    header nav {
+        justify-content: end;
+    }
 }
 
 /* All Mobile Sizes (devices and browser) */
@@ -424,5 +425,19 @@ footer {
     #back {
         bottom: 30px;
         
+    }
+
+    header nav {
+        margin: 0px auto;
+        padding-top: 20px;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    header nav ul li {
+        font-size: 18px;
     }
 }
